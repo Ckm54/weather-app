@@ -13,15 +13,15 @@ import 'package:json_annotation/json_annotation.dart';
 part 'location.g.dart';
 
 @JsonSerializable()
-class Locaton {
+class Location {
   const Locaton(
       {required this.id,
       required this.name,
       required this.latitude,
       required this.longitude});
 
-  factory Locaton.fromJson(Map<String, dynamic> json) =>
-      _$LocatonFromJson(json);
+  factory Location.fromJson(Map<String, dynamic> json) =>
+      _$LocationFromJson(json);
 
   final int id;
   final String name;
