@@ -7,15 +7,23 @@ import 'dart:async';
 import 'package:http/http.dart' as http;
 import 'package:open_meteo_api/open_meteo_api.dart';
 
+// exceptionthrown when location search fails
 class LocationRequestFailure implements Exception {}
 
+// Exception thrown when the provided location is not found
 class LocationNotFoundFailure implements Exception {}
 
+// Exception thrown when getWeather fails
 class WeatherRequestFailure implements Exception {}
 
+// Exception thrown when weather for provided location is not found
 class WeatherNotFoundFailure implements Exception {}
 
+// {@template open_meteo_api_client}
+// Dart api client which wraps the [Open Meteo Api](https://open-meteo.com)
+// {@endTemplate}
 class OpenMeteoApiClient {
+  // {@macro open_meteo_api_client}
   OpenMeteoApiClient({http.Client? httpClient})
       : _httpClient = httpClient ?? http.Client();
 
@@ -23,6 +31,8 @@ class OpenMeteoApiClient {
   static const _baseUrlGeocoding = 'geocoding-api.open-meteo.com';
 
   final http.Client _httpClient;
+
+  // finds a [Location] `/v1/search/?name=(query)`.
   Future<Location> locationSearch(String query) async {
     final locationRequest = Uri.https(
       _baseUrlGeocoding,
