@@ -8,11 +8,11 @@ part of 'location.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-Locaton _$LocatonFromJson(Map<String, dynamic> json) => $checkedCreate(
-      'Locaton',
+Location _$LocationFromJson(Map<String, dynamic> json) => $checkedCreate(
+      'Location',
       json,
       ($checkedConvert) {
-        final val = Locaton(
+        final val = Location(
           id: $checkedConvert('id', (v) => v as int),
           name: $checkedConvert('name', (v) => v as String),
           latitude: $checkedConvert('latitude', (v) => (v as num).toDouble()),

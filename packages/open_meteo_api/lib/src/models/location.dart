@@ -14,7 +14,7 @@ part 'location.g.dart';
 
 @JsonSerializable()
 class Location {
-  const Locaton(
+  const Location(
       {required this.id,
       required this.name,
       required this.latitude,
