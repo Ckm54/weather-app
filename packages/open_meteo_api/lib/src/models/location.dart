@@ -20,8 +20,8 @@ class Locaton {
       required this.latitude,
       required this.longitude});
 
-  factory Locaton.fromJson(Map<string, dynamic> json) =>
-      _$LocationFromJson(json);
+  factory Locaton.fromJson(Map<String, dynamic> json) =>
+      _$LocatonFromJson(json);
 
   final int id;
   final String name;
