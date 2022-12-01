@@ -8,6 +8,8 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
+  http: ^0.13.0
+  json_annotation: ^4.6.0
   flutter:
     sdk: flutter
 
@@ -15,6 +17,11 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
+  build_runner: ^2.0.0
+  json_serializable: ^6.3.1
+  mocktail: ^0.3.0
+  test: ^1.16.4
+  very_good_analysis: ^3.0.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
