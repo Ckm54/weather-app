@@ -194,7 +194,7 @@ void main() {
           actual,
           isA<Weather>()
               .having((w) => w.temperature, 'temperature', 15.3)
-              .having((w) => w.weatherCode, 'weatherCode', 63.0),
+              .having((w) => w.weatherCode, 'weathercode', 63.0),
         );
       });
     });
