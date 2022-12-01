@@ -18,6 +18,6 @@ class Weather {
       _$WeatherFromJson(json);
 
   final double temperature;
-  @JsonKey(name: 'weatherCode')
+  @JsonKey(name: 'weathercode')
   final double weatherCode;
 }
