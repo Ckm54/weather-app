@@ -1,3 +1,5 @@
+// this page displays if there is an error
+
 import 'package:flutter/material.dart';
 
 class WeatherError extends StatelessWidget {
