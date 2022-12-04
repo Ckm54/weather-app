@@ -1,3 +1,5 @@
+// this widget displays when data is loading as a user awaits a result
+
 import 'package:flutter/material.dart';
 
 class WeatherLoading extends StatelessWidget {
