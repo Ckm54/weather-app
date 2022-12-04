@@ -17,7 +17,7 @@ class WeatherState extends Equatable {
     Weather? weather,
   }) : weather = weather ?? Weather.empty;
 
-  const factory WeatherState.fromJson(Map<String, dynamic> json) = _$WeatherStateFromJson(json);
+  factory WeatherState.fromJson(Map<String, dynamic> json) => _$WeatherStateFromJson(json);
 
   final WeatherStatus status;
   final Weather weather;
