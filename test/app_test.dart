@@ -8,14 +8,14 @@ import 'package:flutter_weather/weather/weather.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:weather_repository/weather_repository.dart';
 
-import 'helpers/hydrated_bloc.dart';
+// import 'helpers/hydrated_bloc.dart';
 
 class MockThemeCubit extends MockCubit<Color> implements ThemeCubit {}
 
 class MockWeatherRepository extends Mock implements WeatherRepository {}
 
 void main() {
-  initHydratedStorage();
+  // initHydratedStorage();
 
   group('WeatherApp', () {
     late WeatherRepository weatherRepository;
